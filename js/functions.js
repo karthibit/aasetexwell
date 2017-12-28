@@ -44,7 +44,9 @@ jQuery(function($) {
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
+		social_tools: false,
+		allow_resize: true
+		
 	});	
 	
 	$('.text').click(function() {
