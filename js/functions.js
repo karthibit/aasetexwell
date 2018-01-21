@@ -39,14 +39,17 @@ jQuery(function($) {
 			$portfolio.isotope({ filter: selector });
 			return false;
 		});
+		
+		$('.portfolio-filter .active').click();
 	});
 
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false,
-		allow_resize: true
-		
+		allow_resize: true,
+		default_width: 300,
+		default_height: 100
 	});	
 	
 	$('.text').click(function() {
