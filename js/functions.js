@@ -53,9 +53,28 @@ jQuery(function($) {
 	});
 	
 	$('.text').click(function() {
+	  trackGAEvent( 'Portfolio', $(this).parent().parent().find('.mainimage').data('fancybox'));
 	  $(this).parent().parent().find('.mainimage').click();
    });
     
+   //Portfolio
+   $('.portfolio-item .recent-work-wrap img').click( 
+	function(event){ 
+        trackGAEvent('Portfolio' , $(event.target).parent().data('fancybox'));
+   });	
+
+   //GA Tracking
+   function trackGAEvent( category, item){
+       if (typeof value === "undefined") {		
+	 return;
+       }
+
+	gtag('event', 'play', {
+	  'event_category': category,
+	  'event_label': item
+	});
+    }
+	
     //Google Map
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
