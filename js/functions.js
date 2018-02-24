@@ -65,7 +65,7 @@ jQuery(function($) {
 
    //GA Tracking
    function trackGAEvent( category, item){
-       if (typeof value === "undefined") {		
+       if (typeof item === "undefined") {		
 	 return;
        }
 
