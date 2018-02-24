@@ -51,15 +51,6 @@ jQuery(function($) {
 		
 		$('.portfolio-filter .active').click();
 	});
-
-
-	//Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false,
-		allow_resize: true,
-		default_width: 300,
-		default_height: 100
-	});	
 	
 	$('.text').click(function() {
 	  $(this).parent().parent().find('.mainimage').click();
