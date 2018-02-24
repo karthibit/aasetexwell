@@ -42,7 +42,7 @@ jQuery(function($) {
 			if(triggerGA){
 			   gtag('event', 'click', {
 			        'event_category': 'Portfolio',
-				'event_label': 'Table Linen'
+				'event_label': $(this).html()
 			       });
 			}
 			triggerGA = true;
