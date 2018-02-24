@@ -32,11 +32,20 @@ jQuery(function($) {
 			layoutMode : 'fitRows'
 		});
 		
+	        var triggerGA = false;
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
 			var selector = $(this).attr('data-filter');
 			$portfolio.isotope({ filter: selector });
+			
+			if(triggerGA){
+			   gtag('event', 'click', {
+			        'event_category': 'Portfolio',
+				'event_label': 'Table Linen'
+			       });
+			}
+			triggerGA = true;
 			return false;
 		});
 		
