@@ -2,19 +2,19 @@
   "name": "SHOP",
   "short_name": "SHOP",
   "icons": [{
-      "src": "images/shop-icon-128.png",
+      "src": "shop/images/shop-icon-128.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "images/shop-icon-192.png",
+      "src": "shop/images/shop-icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },{
-      "src": "images/shop-icon-384.png",
+      "src": "shop/images/shop-icon-384.png",
       "sizes": "384x384",
       "type": "image/png"
     },{
-      "src": "images/shop-icon-512.png",
+      "src": "shop/images/shop-icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }],
