@@ -368,7 +368,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";const $_documentContain
           <iron-form id="checkoutForm"
               on-iron-form-response="_didReceiveResponse"
               on-iron-form-presubmit="_willSendRequest">
-            <form method="post" action="data/sample_success_response.json" enctype="application/x-www-form-urlencoded">
+            <form method="post" action="shop/data/sample_success_response.json" enctype="application/x-www-form-urlencoded">
 
               <div class="subsection" visible$="[[!_hasItems]]">
                 <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
