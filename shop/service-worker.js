@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["images/ladies_outerwear.jpg","790e95e6d417ab5447a37d5127b15919"],["images/ladies_tshirts.jpg","4fee73df809e6363d29c53c4616c89cd"],["images/mens_outerwear.jpg","034f3d48b53419e0ee8897e1f1fa5770"],["images/mens_tshirts.jpg","364adbf5dc1b6247ba58c5e3887bb63c"],["images/shop-icon-128.png","7c233b5552b74a53b45f7bb8590f1b54"],["images/shop-icon-192.png","d2e93b8e0722070229467585fd1221f0"],["images/shop-icon-32.png","db2a62dbf6f348a8d557cf047956872c"],["images/shop-icon-384.png","0f3500e24fc5ce5f20f3e3d09740a7a7"],["images/shop-icon-512.png","9a3fbf052187f4ed6187a7a6b5845f48"],["index.html","8c87100cf52c3cfbe39cca5ced8f84d4"],["manifest.json","0cc1a5cb84008a7fd3c1df0825df47d4"],["src/lazy-resources.js","e2667a2112d41ee346c73d52b7231367"],["src/shop-app.js","5dda8bc4d2d364a9584f156f86eadb84"],["src/shop-cart.js","c435783feb560e9696cc422b81709e67"],["src/shop-checkout.js","e1e964990f17070af035ffa505d82075"],["src/shop-detail.js","67ba75e09676e5efab84454544da9284"],["src/shop-list.js","6cdb1936018eaed3e7932886aac52968"]];
+var precacheConfig = [["index.html","c540546557b490ff0b0500d49701bc5a"],["manifest.json","b3b401fd36cb1dd126562058276995a2"],["shop/src/shop-app.js","47181d55c04db2b6738ede29456346e4"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
