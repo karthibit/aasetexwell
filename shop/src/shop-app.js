@@ -7734,8 +7734,8 @@ activateEvent:{type:String,value:null}},observers:["_selectedPageChanged(selecte
 get _shouldUpdateSelection(){return null!=this.selected||null!=this.selectedValues&&this.selectedValues.length},_updateAttrForSelected:function(){if(!this.multi){IronSelectableBehavior._updateAttrForSelected.apply(this)}else if(this.selectedItems&&0<this.selectedItems.length){this.selectedValues=this.selectedItems.map(function(selectedItem){return this._indexToValue(this.indexOf(selectedItem))},this).filter(function(unfilteredValue){return null!=unfilteredValue},this)}},_updateSelected:function(){if(this.multi){this._selectMulti(this.selectedValues)}else{this._selectSelected(this.selected)}},_selectMulti:function(values){values=values||[];var selectedItems=(this._valuesToItems(values)||[]).filter(function(item){return null!==item&&item!==void 0});// clear all but the current selected items
 this._selection.clear(selectedItems);// select only those not selected yet
 for(var i=0;i<selectedItems.length;i++){this._selection.setItemSelected(selectedItems[i],!0)}// Check for items, since this array is populated only when attached
-if(this.fallbackSelection&&!this._selection.get().length){var fallback=this._valueToItem(this.fallbackSelection);if(fallback){this.select(this.fallbackSelection)}}},_selectionChange:function(){var s=this._selection.get();if(this.multi){this._setSelectedItems(s);this._setSelectedItem(s.length?s[0]:null)}else{if(null!==s&&s!==void 0){this._setSelectedItems([s]);this._setSelectedItem(s)}else{this._setSelectedItems([]);this._setSelectedItem(null)}}},_toggleSelected:function(value){var i=this.selectedValues.indexOf(value),unselected=0>i;if(unselected){this.push("selectedValues",value)}else{this.splice("selectedValues",i,1)}},_valuesToItems:function(values){return null==values?null:values.map(function(value){return this._valueToItem(value)},this)}};/** @polymerBehavior */_exports.IronMultiSelectableBehaviorImpl=IronMultiSelectableBehaviorImpl;const IronMultiSelectableBehavior=[IronSelectableBehavior,IronMultiSelectableBehaviorImpl];_exports.IronMultiSelectableBehavior=IronMultiSelectableBehavior;var ironMultiSelectable={IronMultiSelectableBehaviorImpl:IronMultiSelectableBehaviorImpl,IronMultiSelectableBehavior:IronMultiSelectableBehavior};_exports.$ironMultiSelectable=ironMultiSelectable;Polymer({is:"iron-selector",behaviors:[IronMultiSelectableBehavior]});let categoryList=[{name:"mens_outerwear",title:"Kitchen Linen",image:"shop/images/aase/kitchen/main03.jpg",placeholder:""},{name:"ladies_outerwear",title:"Table Linen",image:"shop/images/aase/table/main02.jpg",placeholder:""},{name:"mens_tshirts",title:"Living Linen",image:"shop/images/aase/living/main03.jpg",placeholder:""// placeholder: 'data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8NDxcbFBAQFBsfFxcXFxcfHhcaGhoaFx4eIyUnJSMeLy8zMy8vQEBAQEBAQEBAQEBAQEBAAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAADAA4DASIAAhEBAxEB/8QAWwABAQEAAAAAAAAAAAAAAAAAAAMEAQEAAAAAAAAAAAAAAAAAAAAAEAABAwEJAAAAAAAAAAAAAAARAAESEyFhodEygjMUBREAAwAAAAAAAAAAAAAAAAAAAEFC/9oADAMBAAIRAxEAPwDb7kupZU1MTGnvOCgxpvzEXTyRElCmf//Z'
-},{name:"bedding",title:"Bedding",image:"shop/images/aase/bedding/main.jpg",placeholder:""},{name:"bedsheetcotton",title:"Bedsheet-Cotton",image:"shop/images/aase/cottonbedsheet/main.jpg",placeholder:""},{name:"bedsheetpolycotton",title:"Bedsheet-PolyCotton",image:"shop/images/aase/polycottonbedsheet/main.jpeg",placeholder:""}];class ShopCategoryData extends PolymerElement{static get is(){return"shop-category-data"}static get properties(){return{categoryName:String,itemName:String,categories:{type:Array,value:categoryList,readOnly:!0,notify:!0},category:{type:Object,computed:"_computeCategory(categoryName)",notify:!0},item:{type:Object,computed:"_computeItem(category.items, itemName)",notify:!0},failure:{type:Boolean,notify:!0,readOnly:!0}}}_getCategoryObject(categoryName){for(let i=0,c;c=this.categories[i];++i){if(c.name===categoryName){return c}}}_computeCategory(categoryName){// Fetch the items of the category. Note that the fetch is asynchronous,
+if(this.fallbackSelection&&!this._selection.get().length){var fallback=this._valueToItem(this.fallbackSelection);if(fallback){this.select(this.fallbackSelection)}}},_selectionChange:function(){var s=this._selection.get();if(this.multi){this._setSelectedItems(s);this._setSelectedItem(s.length?s[0]:null)}else{if(null!==s&&s!==void 0){this._setSelectedItems([s]);this._setSelectedItem(s)}else{this._setSelectedItems([]);this._setSelectedItem(null)}}},_toggleSelected:function(value){var i=this.selectedValues.indexOf(value),unselected=0>i;if(unselected){this.push("selectedValues",value)}else{this.splice("selectedValues",i,1)}},_valuesToItems:function(values){return null==values?null:values.map(function(value){return this._valueToItem(value)},this)}};/** @polymerBehavior */_exports.IronMultiSelectableBehaviorImpl=IronMultiSelectableBehaviorImpl;const IronMultiSelectableBehavior=[IronSelectableBehavior,IronMultiSelectableBehaviorImpl];_exports.IronMultiSelectableBehavior=IronMultiSelectableBehavior;var ironMultiSelectable={IronMultiSelectableBehaviorImpl:IronMultiSelectableBehaviorImpl,IronMultiSelectableBehavior:IronMultiSelectableBehavior};_exports.$ironMultiSelectable=ironMultiSelectable;Polymer({is:"iron-selector",behaviors:[IronMultiSelectableBehavior]});let categoryList=[{name:"mens_outerwear",title:"Kitchen Linen",image:"shop/data/images/catergory/kitchen/main03.jpg",placeholder:""},{name:"ladies_outerwear",title:"Table Linen",image:"shop/data/images/catergory/table/main02.jpg",placeholder:""},{name:"mens_tshirts",title:"Living Linen",image:"shop/data/images/catergory/living/main03.jpg",placeholder:""// placeholder: 'data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8NDxcbFBAQFBsfFxcXFxcfHhcaGhoaFx4eIyUnJSMeLy8zMy8vQEBAQEBAQEBAQEBAQEBAAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAADAA4DASIAAhEBAxEB/8QAWwABAQEAAAAAAAAAAAAAAAAAAAMEAQEAAAAAAAAAAAAAAAAAAAAAEAABAwEJAAAAAAAAAAAAAAARAAESEyFhodEygjMUBREAAwAAAAAAAAAAAAAAAAAAAEFC/9oADAMBAAIRAxEAPwDb7kupZU1MTGnvOCgxpvzEXTyRElCmf//Z'
+},{name:"bedding",title:"Bedding",image:"shop/data/images/catergory/bedding/main.jpg",placeholder:""},{name:"bedsheetcotton",title:"Bedsheet-Cotton",image:"shop/data/images/catergory/cottonbedsheet/main.jpg",placeholder:""},{name:"bedsheetpolycotton",title:"Bedsheet-PolyCotton",image:"shop/data/images/catergory/polycottonbedsheet/main.jpeg",placeholder:""}];class ShopCategoryData extends PolymerElement{static get is(){return"shop-category-data"}static get properties(){return{categoryName:String,itemName:String,categories:{type:Array,value:categoryList,readOnly:!0,notify:!0},category:{type:Object,computed:"_computeCategory(categoryName)",notify:!0},item:{type:Object,computed:"_computeItem(category.items, itemName)",notify:!0},failure:{type:Boolean,notify:!0,readOnly:!0}}}_getCategoryObject(categoryName){for(let i=0,c;c=this.categories[i];++i){if(c.name===categoryName){return c}}}_computeCategory(categoryName){// Fetch the items of the category. Note that the fetch is asynchronous,
 // which means `category.items` may not be set initially (but that path
 // will be notified when the fetch completes).
 let categoryObj=this._getCategoryObject(categoryName);this._fetchItems(categoryObj,1);return categoryObj}_computeItem(items,itemName){if(!items||!itemName){return}for(let i=0,item;item=items[i];++i){if(item.name===itemName){return item}}}_fetchItems(category,attempts){this._setFailure(!1);// Only fetch the items of a category if it has not been previously set.
@@ -7951,12 +7951,12 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
     <dom-repeat items="[[categories]]">
       <template strip-whitespace="">
         <div class="item">
-          <a class="image-link" href\$="/list/[[item.name]]">
+          <a class="image-link" href\$="/shop/list/[[item.name]]">
             <shop-image src="[[item.image]]" alt="[[item.title]]" placeholder-img="[[item.placeholder]]"></shop-image>
           </a>
           
           <shop-button>
-            <a aria-label\$="[[item.title]] Shop Now" href\$="/list/[[item.name]]">[[item.title]]</a>
+            <a aria-label\$="[[item.title]] Shop Now" href\$="/shop/list/[[item.name]]">[[item.title]]</a>
           </shop-button>
         </div>
       </template>
@@ -8174,8 +8174,9 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
     <!--
       app-location and app-route elements provide the state of the URL for the app.
     -->
+    
     <app-location route="{{route}}"></app-location>
-    <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{subroute}}"></app-route>
+    <app-route route="{{route}}" pattern="/shop/:page"   data="{{routeData}}" tail="{{subroute}}"></app-route>
 
     <iron-media-query query="max-width: 767px" query-matches="{{smallScreen}}"></iron-media-query>
 
@@ -8195,15 +8196,15 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
         <div class="left-bar-item">
           <paper-icon-button class="menu-btn" icon="menu" on-click="_toggleDrawer" aria-label="Categories">
           </paper-icon-button>
-          <a class="back-btn" href="/list/[[categoryName]]" tabindex="-1">
+          <a class="back-btn" href="/shop/list/[[categoryName]]" tabindex="-1">
             <paper-icon-button icon="arrow-back" aria-label="Go back"></paper-icon-button>
           </a>
         </div>
         <div class="logo" main-title="">          
-          <a href="/" aria-label="SHOMES SHOP">SHOMES SHOPPING</a>
+          <a href="/shop/" aria-label="SHOMES SHOP">SHOMES SHOPPING</a>
         </div>
         <div class="cart-btn-container">
-          <a href="/cart" tabindex="-1">
+          <a href="/shop/cart" tabindex="-1">
             <paper-icon-button icon="shopping-cart" aria-label\$="Shopping cart: [[_computePluralizedQuantity(numItems)]]"></paper-icon-button>
           </a>
           <div class="cart-badge" aria-hidden="true" hidden\$="[[!numItems]]">[[numItems]]</div>
@@ -8218,7 +8219,7 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
               <dom-repeat items="[[categories]]" as="category" initial-count="4">
                 <template>
                 <shop-tab name="[[category.name]]">
-                  <a href="/list/[[category.name]]">[[category.title]]</a>
+                  <a href="/shop/list/[[category.name]]">[[category.title]]</a>
                 </shop-tab>
                 </template>
               </dom-repeat>
@@ -8236,7 +8237,7 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
         <iron-selector role="navigation" class="drawer-list" selected="[[categoryName]]" attr-for-selected="name">
           <dom-repeat items="[[categories]]" as="category" initial-count="4">
             <template>
-              <a name="[[category.name]]" href="/list/[[category.name]]">[[category.title]]</a>
+              <a name="[[category.name]]" href="/shop/list/[[category.name]]">[[category.title]]</a>
             </template>
           </dom-repeat>
         </iron-selector>
@@ -8265,11 +8266,12 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
 
     <!-- a11y announcer -->
     <div class="announcer" aria-live="assertive">[[_a11yLabel]]</div>
-`}static get is(){return"shop-app"}static get properties(){return{page:{type:String,reflectToAttribute:!0,observer:"_pageChanged"},numItems:{type:Number,value:0},_shouldShowTabs:{computed:"_computeShouldShowTabs(page, smallScreen)"},_shouldRenderTabs:{computed:"_computeShouldRenderTabs(_shouldShowTabs, loadComplete)"},_shouldRenderDrawer:{computed:"_computeShouldRenderDrawer(smallScreen, loadComplete)"}}}static get observers(){return["_routePageChanged(routeData.page)"]}constructor(){super();window.performance&&performance.mark&&performance.mark("shop-app.created")}ready(){super.ready();// Custom elements polyfill safe way to indicate an element has been upgraded.
+`}static get is(){return"shop-app"}static get observers(){return["_routeChanged(route.*)","_viewChanged(routeData.view)"]}_routeChanged(changeRecord){debugger;if("path"===changeRecord.path){console.log("Path changed!")}}_viewChanged(view){debugger;// load data for view
+}static get properties(){return{page:{type:String,reflectToAttribute:!0,observer:"_pageChanged"},numItems:{type:Number,value:0},_shouldShowTabs:{computed:"_computeShouldShowTabs(page, smallScreen)"},_shouldRenderTabs:{computed:"_computeShouldRenderTabs(_shouldShowTabs, loadComplete)"},_shouldRenderDrawer:{computed:"_computeShouldRenderDrawer(smallScreen, loadComplete)"}}}static get observers(){return["_routePageChanged(subroute)"]}constructor(){super();window.performance&&performance.mark&&performance.mark("shop-app.created")}ready(){super.ready();// Custom elements polyfill safe way to indicate an element has been upgraded.
 this.removeAttribute("unresolved");// listen for custom events
 this.addEventListener("add-cart-item",e=>this._onAddCartItem(e));this.addEventListener("set-cart-item",e=>this._onSetCartItem(e));this.addEventListener("clear-cart",e=>this._onClearCart(e));this.addEventListener("change-section",e=>this._onChangeSection(e));this.addEventListener("announce",e=>this._onAnnounce(e));this.addEventListener("dom-change",e=>this._domChange(e));this.addEventListener("show-invalid-url-warning",e=>this._onFallbackSelectionTriggered(e));// listen for online/offline
-afterNextRender(this,()=>{window.addEventListener("online",e=>this._notifyNetworkStatus(e));window.addEventListener("offline",e=>this._notifyNetworkStatus(e))})}_routePageChanged(page){if("list"===this.page){this._listScrollTop=window.pageYOffset}this.page=page||"home";// Close the drawer - in case the *route* change came from a link in the drawer.
-this.drawerOpened=!1}_pageChanged(page,oldPage){if(null!=page){let cb=this._pageLoaded.bind(this,!!oldPage);switch(page){case"list":new Promise((res,rej)=>_require.default(["./shop-list.js"],res,rej)).then(bundle=>bundle&&bundle.$shopList||{}).then(cb);break;case"detail":new Promise((res,rej)=>_require.default(["./shop-detail.js"],res,rej)).then(bundle=>bundle&&bundle.$shopDetail||{}).then(cb);break;case"cart":new Promise((res,rej)=>_require.default(["./shop-cart.js"],res,rej)).then(bundle=>bundle&&bundle.$shopCart||{}).then(cb);break;case"checkout":new Promise((res,rej)=>_require.default(["./shop-checkout.js"],res,rej)).then(bundle=>bundle&&bundle.$shopCheckout||{}).then(cb);break;default:this._pageLoaded(!!oldPage);}}}_pageLoaded(shouldResetLayout){this._ensureLazyLoaded();if(shouldResetLayout){// The size of the header depends on the page (e.g. on some pages the tabs
+afterNextRender(this,()=>{window.addEventListener("online",e=>this._notifyNetworkStatus(e));window.addEventListener("offline",e=>this._notifyNetworkStatus(e))})}_routePageChanged(subroute){let routePage="home";if(subroute.prefix){routePage=subroute.prefix.replace("/shop/","")}if("list"==routePage){this._listScrollTop=window.pageYOffset}this.page=routePage||"home";// Close the drawer - in case the *route* change came from a link in the drawer.
+this.drawerOpened=!1}_pageChanged(page,oldPage){debugger;if(null!=page){let cb=this._pageLoaded.bind(this,!!oldPage);switch(page){case"list":new Promise((res,rej)=>_require.default(["./shop-list.js"],res,rej)).then(bundle=>bundle&&bundle.$shopList||{}).then(cb);break;case"detail":new Promise((res,rej)=>_require.default(["./shop-detail.js"],res,rej)).then(bundle=>bundle&&bundle.$shopDetail||{}).then(cb);break;case"cart":new Promise((res,rej)=>_require.default(["./shop-cart.js"],res,rej)).then(bundle=>bundle&&bundle.$shopCart||{}).then(cb);break;case"checkout":new Promise((res,rej)=>_require.default(["./shop-checkout.js"],res,rej)).then(bundle=>bundle&&bundle.$shopCheckout||{}).then(cb);break;default:this._pageLoaded(!!oldPage);}}}_pageLoaded(shouldResetLayout){this._ensureLazyLoaded();if(shouldResetLayout){// The size of the header depends on the page (e.g. on some pages the tabs
 // do not appear), so reset the header's layout only when switching pages.
 timeOut.run(()=>{this.$.header.resetLayout()},1)}}_ensureLazyLoaded(){// load lazy resources after render and set `loadComplete` when done.
 if(!this.loadComplete){afterNextRender(this,()=>{new Promise((res,rej)=>_require.default(["./lazy-resources.js"],res,rej)).then(bundle=>bundle&&bundle.$lazyResources||{}).then(()=>{// Register service worker if supported.

@@ -23,11 +23,20 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopCart extends 
 
       }
 
+      :host {
+        display: block;
+        text-align: center;
+        color: var(--app-secondary-color);
+      }
+
     </style>
 
     <div class="main-frame">
       <div class="subsection" visible$="[[!_hasItems]]">
         <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+        <shop-button>
+          <a href="/shop/">Go to the home page</a>
+        </shop-button>
       </div>
       <div class="subsection" visible$="[[_hasItems]]">
         <header>
@@ -44,7 +53,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopCart extends 
         <div class="checkout-box">
           Total: <span class="subtotal">[[_formatTotal(total)]]</span>
           <shop-button responsive>
-            <a href="/checkout">Checkout</a>
+            <a href="/shop/checkout">Checkout</a>
           </shop-button>
         </div>
       </div>

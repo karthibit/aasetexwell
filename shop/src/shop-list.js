@@ -158,6 +158,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopListItem exte
       shop-network-warning shows a warning message when the items can't be rendered due
       to network conditions.
     -->
+    Karthik
     <shop-network-warning
         hidden$="[[!failure]]"
         offline="[[offline]]"
@@ -167,5 +168,5 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopListItem exte
   `}static get is(){return"shop-list"}static get properties(){return{category:Object,route:Object,routeData:Object,visible:{type:Boolean,value:!1},offline:{type:Boolean,observer:"_offlineChanged"},failure:Boolean}}_itemOnSelect(data){if(data.currentTarget&&data.currentTarget.item){ga("send","event",data.currentTarget.item.category,"category-item-selected",data.currentTarget.item.name)}}static get observers(){return["_categoryChanged(category, visible)"]}connectedCallback(){super.connectedCallback();this.isAttached=!0}disconnectedCallback(){super.disconnectedCallback();this.isAttached=!1}_getListItems(items){// Return placeholder items when the items haven't loaded yet.
 return items||[{},{},{},{},{},{},{},{},{},{}]}_getItemHref(item){// By returning null when `itemId` is undefined, the href attribute won't be set and
 // the link will be disabled.
-return item.name?["/detail",this.category.name,item.name].join("/"):null}_getPluralizedQuantity(quantity){if(!quantity){return""}let pluralizedQ=1===quantity?"item":"items";return"("+quantity+" "+pluralizedQ+")"}_categoryChanged(category,visible){if(!visible){return}if(category){ga("send","event","category","category-selected",category.title)}this._changeSectionDebouncer=_shopApp.Debouncer.debounce(this._changeSectionDebouncer,_shopApp.microTask,()=>{if(category){// Notify the category and the page's title
+return item.name?["/shop/detail",this.category.name,item.name].join("/"):null}_getPluralizedQuantity(quantity){if(!quantity){return""}let pluralizedQ=1===quantity?"item":"items";return"("+quantity+" "+pluralizedQ+")"}_categoryChanged(category,visible){if(!visible){return}if(category){ga("send","event","category","category-selected",category.title)}this._changeSectionDebouncer=_shopApp.Debouncer.debounce(this._changeSectionDebouncer,_shopApp.microTask,()=>{if(category){// Notify the category and the page's title
 this.dispatchEvent(new CustomEvent("change-section",{bubbles:!0,composed:!0,detail:{category:category.name,title:category.title,image:this.baseURI+category.image}}))}else{this.dispatchEvent(new CustomEvent("show-invalid-url-warning",{bubbles:!0,composed:!0}))}})}_tryReconnect(){this.$.categoryData.refresh()}_offlineChanged(offline){if(!offline&&this.isAttached){this._tryReconnect()}}}customElements.define(ShopList.is,ShopList)});

@@ -380,6 +380,9 @@ define(["./shop-app.js"],function(_shopApp){"use strict";const $_documentContain
 
               <div class="subsection" visible$="[[!_hasItems]]">
                 <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+                <shop-button>
+                <a href="/shop/">Go to the home page</a>
+              </shop-button>
               </div>
 
               <header class="subsection" visible$="[[_hasItems]]">
@@ -440,7 +443,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";const $_documentContain
           <h1>Thank you</h1>
           <p>[[response.successMessage]]</p>
           <shop-button responsive>
-            <a href="/">Finish</a>
+            <a href="/shop">Finish</a>
           </shop-button>
         </header>
 
@@ -449,7 +452,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";const $_documentContain
           <h1>We couldn&acute;t process your order</h1>
           <p id="errorMessage">[[response.errorMessage]]</p>
           <shop-button responsive>
-            <a href="/checkout">Try again</a>
+            <a href="/shop/checkout">Try again</a>
           </shop-button>
         </header>
 

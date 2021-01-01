@@ -3212,10 +3212,10 @@ if(-1!==i){this.splice("cart",i,1,detail)}else{this.push("cart",detail)}}}clearC
     </div>
     <div class="layout-horizontal">
       <shop-button class="modal-button">
-        <a href="/cart" on-click="close" id="viewCartAnchor">View Cart</a>
+        <a href="/shop/cart" on-click="close" id="viewCartAnchor">View Cart</a>
       </shop-button>
       <shop-button class="modal-button">
-        <a href="/checkout" on-click="close">Checkout</a>
+        <a href="/shop/checkout" on-click="close">Checkout</a>
       </shop-button>
     </div>
 
@@ -3412,7 +3412,7 @@ if(!this._isDown){this._rippleDown(event)}}_onBlur(event){this._rippleUp(event)}
       <h1>Sorry, we couldn't find that page</h1>
     </div>
     <shop-button>
-      <a href="/">Go to the home page</a>
+      <a href="/shop/">Go to the home page</a>
     </shop-button>
 `}static get is(){return"shop-404-warning"}}customElements.define(Shop404Warning.is,Shop404Warning);class ShopCartItem extends _shopApp.PolymerElement{static get template(){return _shopApp.html`
     <style include="shop-select">
@@ -3562,12 +3562,12 @@ if(!this._isDown){this._rippleDown(event)}}_onBlur(event){this._rippleUp(event)}
 
     </style>
 
-    <a href\$="/detail/[[entry.item.category]]/[[entry.item.name]]" title\$="[[entry.item.title]]">
+    <a href\$="/shop/detail/[[entry.item.category]]/[[entry.item.name]]" title\$="[[entry.item.title]]">
       <shop-image src="[[entry.item.image]]" alt="[[entry.item.title]]"></shop-image>
     </a>
     <div class="flex">
       <div class="name">
-        <a href\$="/detail/[[entry.item.category]]/[[entry.item.name]]">[[entry.item.title]]</a>
+        <a href\$="/shop/detail/[[entry.item.category]]/[[entry.item.name]]">[[entry.item.title]]</a>
       </div>
       <div class="detail">
         <div class="quantity">
