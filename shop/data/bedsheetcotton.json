@@ -1,15 +1,15 @@
 [
 
   {
-    "name":"meera+-+Single+Bedsheet",
-    "title":"Meera Special - Single Bedsheet",
+    "name":"Govindaraja+Checks+-+Single+Bedsheet",
+    "title":"Govindaraja - Single Bedsheet",
     "category":"bedsheetcotton",
-    "price":250,
-    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Checked.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedsheetcotton/1.meeraspl.jpeg",
-    "largeImage":"shop/data/images/bedsheetcotton/1.meeraspl.jpeg"
-  }, 
-  {
+    "price":280,
+    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Jacquard.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/bedsheetcotton/4.govindaraja.jpeg",
+    "largeImage":"shop/data/images/bedsheetcotton/4.govindaraja.jpeg"
+  },
+   {
     "name":"Special+2x2+-+Single+Bedsheet",
     "title":"Special 2x2 - Single Bedsheet",
     "category":"bedsheetcotton",
@@ -18,6 +18,25 @@
     "image":"shop/data/images/bedsheetcotton/2.2x2special.jpeg",
     "largeImage":"shop/data/images/bedsheetcotton/2.2x2special.jpeg"
   },
+  {
+    "name":"DC+Spl+-+Single+Bedsheet",
+    "title":"DC Special - Single Bedsheet",
+    "category":"bedsheetcotton",
+    "price":350,
+    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Jacquard.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/bedsheetcotton/6.dcspl.jpeg",
+    "largeImage":"shop/data/images/bedsheetcotton/6.dcspl.jpeg"
+  },
+  {
+    "name":"meera+-+Single+Bedsheet",
+    "title":"Meera Special - Single Bedsheet",
+    "category":"bedsheetcotton",
+    "price":250,
+    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Checked.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/bedsheetcotton/1.meeraspl.jpeg",
+    "largeImage":"shop/data/images/bedsheetcotton/1.meeraspl.jpeg"
+  }, 
+ 
   {
     "name":"Zidhi+-+Single+Bedsheet",
     "title":"Zidhi - Single Bedsheet",
@@ -28,15 +47,6 @@
     "largeImage":"shop/data/images/bedsheetcotton/3.zidhi.jpeg"
   },
   {
-    "name":"Govindaraja+Checks+-+Single+Bedsheet",
-    "title":"Govindaraja - Single Bedsheet",
-    "category":"bedsheetcotton",
-    "price":260,
-    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Jacquard.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedsheetcotton/4.govindaraja.jpeg",
-    "largeImage":"shop/data/images/bedsheetcotton/4.govindaraja.jpeg"
-  },
-  {
     "name":"Anupama+-+Single+Bedsheet",
     "title":"Anupama - Single Bedsheet",
     "category":"bedsheetcotton",
@@ -44,13 +54,5 @@
     "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Jacquard.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"shop/data/images/bedsheetcotton/5.anupama.jpeg",
     "largeImage":"shop/data/images/bedsheetcotton/5.anupama.jpeg"
-  },
-  {
-    "name":"DC+Spl+-+Single+Bedsheet",
-    "title":"DC Special - Single Bedsheet",
-    "category":"bedsheetcotton",
-    "price":350,
-    "description":"It is a 100% Cotton Product, Available Assortted colours,It is a best attractive product and good quality.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% cotton.&lt;/li&gt;&lt;li&gt;Size - 60 x 90 inch.&lt;/li&gt;&lt;li&gt;Design - Jacquard.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedsheetcotton/6.dcspl.jpeg",
-    "largeImage":"shop/data/images/bedsheetcotton/6.dcspl.jpeg"
-  }]
+  }
+]
