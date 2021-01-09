@@ -158,7 +158,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopListItem exte
       shop-network-warning shows a warning message when the items can't be rendered due
       to network conditions.
     -->
-    Karthik
+    
     <shop-network-warning
         hidden$="[[!failure]]"
         offline="[[offline]]"
