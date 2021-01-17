@@ -7735,7 +7735,7 @@ get _shouldUpdateSelection(){return null!=this.selected||null!=this.selectedValu
 this._selection.clear(selectedItems);// select only those not selected yet
 for(var i=0;i<selectedItems.length;i++){this._selection.setItemSelected(selectedItems[i],!0)}// Check for items, since this array is populated only when attached
 if(this.fallbackSelection&&!this._selection.get().length){var fallback=this._valueToItem(this.fallbackSelection);if(fallback){this.select(this.fallbackSelection)}}},_selectionChange:function(){var s=this._selection.get();if(this.multi){this._setSelectedItems(s);this._setSelectedItem(s.length?s[0]:null)}else{if(null!==s&&s!==void 0){this._setSelectedItems([s]);this._setSelectedItem(s)}else{this._setSelectedItems([]);this._setSelectedItem(null)}}},_toggleSelected:function(value){var i=this.selectedValues.indexOf(value),unselected=0>i;if(unselected){this.push("selectedValues",value)}else{this.splice("selectedValues",i,1)}},_valuesToItems:function(values){return null==values?null:values.map(function(value){return this._valueToItem(value)},this)}};/** @polymerBehavior */_exports.IronMultiSelectableBehaviorImpl=IronMultiSelectableBehaviorImpl;const IronMultiSelectableBehavior=[IronSelectableBehavior,IronMultiSelectableBehaviorImpl];_exports.IronMultiSelectableBehavior=IronMultiSelectableBehavior;var ironMultiSelectable={IronMultiSelectableBehaviorImpl:IronMultiSelectableBehaviorImpl,IronMultiSelectableBehavior:IronMultiSelectableBehavior};_exports.$ironMultiSelectable=ironMultiSelectable;Polymer({is:"iron-selector",behaviors:[IronMultiSelectableBehavior]});let categoryList=[{name:"kitchenandbath",title:"Kitchen And Bath Linen",image:"shop/data/images/catergory/kitchen/main03.jpg",placeholder:""},{name:"living",title:"Living Linen",image:"shop/data/images/catergory/living/main03.jpg",placeholder:""// placeholder: 'data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8NDxcbFBAQFBsfFxcXFxcfHhcaGhoaFx4eIyUnJSMeLy8zMy8vQEBAQEBAQEBAQEBAQEBAAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAADAA4DASIAAhEBAxEB/8QAWwABAQEAAAAAAAAAAAAAAAAAAAMEAQEAAAAAAAAAAAAAAAAAAAAAEAABAwEJAAAAAAAAAAAAAAARAAESEyFhodEygjMUBREAAwAAAAAAAAAAAAAAAAAAAEFC/9oADAMBAAIRAxEAPwDb7kupZU1MTGnvOCgxpvzEXTyRElCmf//Z'
-},{name:"bedding",title:"Bedding",image:"shop/data/images/catergory/bedding/main.jpg",placeholder:""},{name:"bedsheetcotton",title:"Bedsheet-Cotton",image:"shop/data/images/catergory/cottonbedsheet/main.jpg",placeholder:""},{name:"bedsheetpolycotton",title:"Bedsheet-PolyCotton",image:"shop/data/images/catergory/polycottonbedsheet/main.jpeg",placeholder:""}];class ShopCategoryData extends PolymerElement{static get is(){return"shop-category-data"}static get properties(){return{categoryName:String,itemName:String,categories:{type:Array,value:categoryList,readOnly:!0,notify:!0},category:{type:Object,computed:"_computeCategory(categoryName)",notify:!0},item:{type:Object,computed:"_computeItem(category.items, itemName)",notify:!0},failure:{type:Boolean,notify:!0,readOnly:!0}}}_getCategoryObject(categoryName){for(let i=0,c;c=this.categories[i];++i){if(c.name===categoryName){return c}}}_computeCategory(categoryName){// Fetch the items of the category. Note that the fetch is asynchronous,
+},{name:"bedding",title:"Bedspread",image:"shop/data/images/catergory/bedding/main.jpg",placeholder:""},{name:"bedsheetcotton",title:"Bedsheet-Cotton",image:"shop/data/images/catergory/cottonbedsheet/main.jpg",placeholder:""},{name:"bedsheetpolycotton",title:"Bedsheet-PolyCotton",image:"shop/data/images/catergory/polycottonbedsheet/main.jpeg",placeholder:""}];class ShopCategoryData extends PolymerElement{static get is(){return"shop-category-data"}static get properties(){return{categoryName:String,itemName:String,categories:{type:Array,value:categoryList,readOnly:!0,notify:!0},category:{type:Object,computed:"_computeCategory(categoryName)",notify:!0},item:{type:Object,computed:"_computeItem(category.items, itemName)",notify:!0},failure:{type:Boolean,notify:!0,readOnly:!0}}}_getCategoryObject(categoryName){for(let i=0,c;c=this.categories[i];++i){if(c.name===categoryName){return c}}}_computeCategory(categoryName){// Fetch the items of the category. Note that the fetch is asynchronous,
 // which means `category.items` may not be set initially (but that path
 // will be notified when the fetch completes).
 let categoryObj=this._getCategoryObject(categoryName);this._fetchItems(categoryObj,1);return categoryObj}_computeItem(items,itemName){if(!items||!itemName){return}for(let i=0,item;item=items[i];++i){if(item.name===itemName){return item}}}_fetchItems(category,attempts){this._setFailure(!1);// Only fetch the items of a category if it has not been previously set.
@@ -7939,14 +7939,44 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
         margin-top: 16px;
       }
 
-    </style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 15px;
+        top: 0px;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 5px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1;}
+      .whatsappgrouplink:hover .dropdown-content {display: block;}
+      .dropdown:hover .whatsappgrouplink {background-color: #3e8e41;}
+    </style> 
 
-    <a href="https://chat.whatsapp.com/LL8VXFRXhr5LqNWttAy1YK" class="float whatsappgrouplink" target="_blank" style="
-    background-color: rgb(77, 194, 71);">
-        <span class="at-icon-wrapper" style="/* line-height: 20px; *//* height: 30px; *//* width: 30px; */">
+    <div class="float whatsappgrouplink">
+      <span class="at-icon-wrapper" style="/* line-height: 20px; *//* height: 30px; *//* width: 30px; */">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-4" style="fill: rgb(255, 255, 255);width: 75%;height: 100%;" class="at-icon at-icon-whatsapp"><title id="at-svg-whatsapp-4">Click to Join WhatsApp Group</title><g><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></g></svg>
-        </span>
-    </a> 
+      </span>
+      <div class="dropdown-content">
+        <a href="https://chat.whatsapp.com/LL8VXFRXhr5LqNWttAy1YK" target="_blank">Join Group</a>
+        <a href="https://wa.me/919994433799?text=Hi Karthik" target="_blank">Contact</a>
+      </div>
+    </div>
 
     <dom-repeat items="[[categories]]">
       <template strip-whitespace="">
