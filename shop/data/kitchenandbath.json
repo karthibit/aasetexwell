@@ -35,7 +35,7 @@
     "image":"shop/data/images/kichen/towel-001.jpg",
     "largeImage":"shop/data/images/kichen/towel-001.jpg"
   },
-       {
+  {
     "name":"Cotton+Kichen+Towel+Design-02",
     "title":"Cotton Kichen Towel - 1 Pcs",
     "category":"kitchenandbath",
@@ -43,6 +43,42 @@
     "description":"kitchen towels (napkins) perfect for cleaning and wiping and drying dishes multipurpose use in Kitchen and home Each cloth is 100% Cotton, machine washable, cleaning cloth makes any surface easy to clean.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% cotton.&lt;/li&gt;&lt;li&gt;Pattern : Yarn Dyed.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"shop/data/images/kichen/towel-002.jpg",
     "largeImage":"shop/data/images/kichen/towel-002.jpg"
+  },
+  {
+    "name":"Cotton+Bath+Towel+Design-01",
+    "title":"Cotton Bath Towel",
+    "category":"kitchenandbath",
+    "price":85,
+    "description":"Queen size, High Quality 100% Cotton Bath Towel. Good Water Absorption and Quick Dry. Ideal For Men and women. Soft cotton bath towel observes water faster after one or two wash.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% cotton.&lt;/li&gt;&lt;li&gt;Size : 75 X 150 cm.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/Bath/001.jpg",
+    "largeImage":"shop/data/images/Bath/001.jpg"
+  },
+  {
+    "name":"White+Cotton+Bath+Towel+Design-02",
+    "title":"White Cotton Bath Kids Towels Light Weight, Fast Absorbing, Pure Cotton",
+    "category":"kitchenandbath",
+    "price":80,
+    "description":"Queen size, High Quality 100% Cotton Bath Towel. Good Water Absorption and Quick Dry. Ideal For Men and women. Soft cotton bath towel observes water faster after one or two wash.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% cotton.&lt;/li&gt;&lt;li&gt;Size : 75 X 150 cm.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/Bath/002.jpg",
+    "largeImage":"shop/data/images/Bath/002.jpg"
+  },
+  {
+    "name":"Cotton+Bath+Towel+Design-03",
+    "title":"Cotton Bath Towels",
+    "category":"kitchenandbath",
+    "price":65,
+    "description":"Queen size, High Quality 100% Cotton Bath Towel. Good Water Absorption and Quick Dry. Ideal For Men and women. Soft cotton bath towel observes water faster after one or two wash.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% cotton.&lt;/li&gt;&lt;li&gt;Size : 75 X 150 cm.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/Bath/003.jpg",
+    "largeImage":"shop/data/images/Bath/003.jpg"
+  },
+  {
+    "name":"Cotton+Bath+Towel+Design-04",
+    "title":"Cotton Bath Towels",
+    "category":"kitchenandbath",
+    "price":70,
+    "description":"Queen size, High Quality 100% Cotton Bath Towel. Good Water Absorption and Quick Dry. Ideal For Men and women. Soft cotton bath towel observes water faster after one or two wash.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% cotton.&lt;/li&gt;&lt;li&gt;Size : 75 X 150 cm.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"shop/data/images/Bath/004.jpg",
+    "largeImage":"shop/data/images/Bath/004.jpg"
   },
   {
     "name":"Cotton+Kichen+Placemats+Design-01",
