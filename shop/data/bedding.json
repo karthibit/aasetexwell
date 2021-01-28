@@ -18,15 +18,6 @@
     "largeImage":"shop/data/images/bedding/2.collorpillow.jpeg"
   },
   {
-    "name":"Sigma+01+XL+King+Bedspread",
-    "title":"Empress Sigma XL King Size Bedspread",
-    "category":"bedding",
-    "price":875,
-    "description":"These Bedsheets are made from fine quality cotton which provide soft touch and proper comfort. &lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : Cotton.&lt;/li&gt;&lt;li&gt;Bed Sheet Size : 108 X 108 Inches OR 274 X 274 Cms.&lt;/li&gt;&lt;li&gt;Pillow Covers : 2 Nos.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedding/001.jpg",
-    "largeImage":"shop/data/images/bedding/001.jpg"
-  },
-  {
     "name":"Sigma+02+XL+King+Bedspread",
     "title":"Empress Sigma XL King Size Bedspread",
     "category":"bedding",
@@ -34,24 +25,6 @@
     "description":"These Bedsheets are made from fine quality cotton which provide soft touch and proper comfort. &lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : Cotton.&lt;/li&gt;&lt;li&gt;Bed Sheet Size : 108 X 108 Inches OR 274 X 274 Cms.&lt;/li&gt;&lt;li&gt;Pillow Covers : 2 Nos.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"shop/data/images/bedding/002.jpg",
     "largeImage":"shop/data/images/bedding/002.jpg"
-  },
-  {
-    "name":"Emotion-D01+XL+King+Bedspread",
-    "title":"Empress Emotion XL King Size Bedspread",
-    "category":"bedding",
-    "price":1250,
-    "description":"These Bedsheets are made from fine 100% cotton which provide soft touch and proper comfort. &lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% Cotton.&lt;/li&gt;&lt;li&gt;Bed Sheet Size : 108 X 108 Inches OR 274 X 274 Cms.&lt;/li&gt;&lt;li&gt;Pillow Covers : 2 Nos.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedding/003.jpg",
-    "largeImage":"shop/data/images/bedding/003.jpg"
-  },
-  {
-    "name":"Majestic+Double+Bedspread",
-    "title":"Majestic Double Size Bedspread",
-    "category":"bedding",
-    "price":725,
-    "description":"These Bedsheets are made from fine 100% cotton which provide soft touch and proper comfort. &lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Material : 100% Cotton.&lt;/li&gt;&lt;li&gt;Bed Sheet Size : 86 X 96 Inches.&lt;/li&gt;&lt;li&gt;Pillow Covers : 2 Nos.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-    "image":"shop/data/images/bedding/004.jpg",
-    "largeImage":"shop/data/images/bedding/004.jpg"
   },
   {
     "name":"Emotion+D02+XL+King+Bedspread",
